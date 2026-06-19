@@ -1,4 +1,7 @@
 # Prestige Catering and Events - Website
+##
+Name: Siyabonga
+Student Number:st10521306
 
 ## Project Overview
 This is the official website for Prestige Catering and Events (Pty) Ltd, 
