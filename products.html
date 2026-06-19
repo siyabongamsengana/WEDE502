@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore catering services offered by Prestige Catering and Events including weddings, corporate events, parties, funerals and general events in Pretoria.">
+    <meta name="keywords" content="catering services Pretoria, wedding catering packages, corporate event catering, party catering Gauteng, funeral catering">
+    <meta name="author" content="Prestige Catering and Events">
+    <title>Services | Prestige Catering and Events</title>
+
+    <!--MY css styling code will be here-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+
+  <!--Moving around my website aka Navigation-->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Prestige Catering <span>&amp; Events</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" class="active">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Page Header-->
+  <section class="page-header">
+    <h1>Our Services</h1>
+    <p>Whatever the occasion, we have a catering solution for you.</p>
+  </section>
+
+  <!-- SERVICE FILTER BUTTONS -->
+  <section class="filter-section">
+    <div class="filter-container">
+      <p>Filter by event type:</p>
+      <div class="filter-buttons">
+        <button class="filter-btn active-filter" onclick="filterServices('all')">All</button>
+        <button class="filter-btn" onclick="filterServices('events')">Events</button>
+        <button class="filter-btn" onclick="filterServices('business')">Business</button>
+        <button class="filter-btn" onclick="filterServices('wedding')">Weddings</button>
+        <button class="filter-btn" onclick="filterServices('party')">Parties</button>
+        <button class="filter-btn" onclick="filterServices('funeral')">Funerals</button>
+      </div>
+    </div>
+  </section>
+
+  <!--Event Catering Service-->
+  <section class="service-detail" data-category="events">
+    <div class="service-detail-content">
+      <div class="service-detail-text">
+        <h2>Events Catering</h2>
+        <p>
+          We specialise in catering for all types of events across
+          Pretoria and greater Gauteng. Whether you are
+          hosting a small private function or a large-scale
+          celebration with hundreds of guests, our team
+          has the experience and resources to deliver.
+        </p>
+        <p>
+          We handle everything from setup and food preparation
+          to serving and cleanup, so you can focus on enjoying
+          your event.
+        </p>
+        <ul>
+          <li>Flexible guest numbers from 10 to 500+</li>
+          <li>Customisable menus to suit your theme</li>
+          <li>Full setup and cleanup included</li>
+          <li>Serving staff available on request</li>
+        </ul>
+        <a href="contact_us.html" class="btn-primary">Book This Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Business catering-->
+  <section class="service-detail" data-category="business">
+    <div class="service-detail-content">
+      <div class="service-detail-text">
+        <h2>Business Catering</h2>
+        <p>
+          We are a trusted catering partner for businesses in Pretoria
+          and surrounding areas.
+        </p>
+        <p>
+          All our corporate packages are designed to be hassle free
+          so your team can focus on the work.
+        </p>
+        <ul>
+          <li>Boardroom lunch and breakfast packages</li>
+          <li>Conference and seminar catering</li>
+          <li>End of the year function catering</li>
+          <li>Recurring office catering arrangements available</li>
+        </ul>
+        <a href="contact_us.html" class="btn-primary">Book This Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Wedding catering-->
+  <section class="service-detail" data-category="wedding">
+    <div class="service-detail-content">
+      <div class="service-detail-text">
+        <h2>Weddings Catering</h2>
+        <p>
+          Your wedding day is one of the most important days
+          of your life and the food should match that.
+        </p>
+        <p>
+          We have catered for both intimate garden weddings and large reception
+          halls. Our team knows how to handle the pressure of a big day with
+          professionalism and care.
+        </p>
+        <ul>
+          <li>Sit down reception menus</li>
+          <li>Buffet and cocktail style options</li>
+          <li>Traditional menus available</li>
+          <li>Cake cutting and dessert station add ons</li>
+        </ul>
+        <a href="contact_us.html" class="btn-primary">Book This Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Party catering-->
+  <section class="service-detail" data-category="party">
+    <div class="service-detail-content">
+      <div class="service-detail-text">
+        <h2>Party Catering</h2>
+        <p>
+          Celebrate life's special moments with food
+          that your guests will talk about for years.
+        </p>
+        <p>
+          We offer full service catering options depending
+          on your needs and budget.
+        </p>
+        <ul>
+          <li>Birthday parties for all ages</li>
+          <li>Baby showers and gender reveals</li>
+          <li>Graduation and farewell parties</li>
+          <li>Full service options</li>
+        </ul>
+        <a href="contact_us.html" class="btn-primary">Book This Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Funeral catering-->
+  <section class="service-detail" data-category="funeral">
+    <div class="service-detail-content">
+      <div class="service-detail-text">
+        <h2>Funeral Catering</h2>
+        <p>
+          We understand that funeral catering needs a different
+          level of sensitivity and care. Our team approaches
+          these bookings with respect and dignity, ensuring
+          that the family can focus on what matters most
+          while we take care of the food.
+        </p>
+        <p>
+          We have experience catering for both small family gatherings
+          and large community funeral receptions across Pretoria.
+        </p>
+        <ul>
+          <li>Traditional South African funeral meals</li>
+          <li>Large pot catering for big gatherings</li>
+          <li>Discrete and respectful service</li>
+          <li>Flexible same week bookings</li>
+        </ul>
+        <a href="contact_us.html" class="btn-primary">Book This Service</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Call to action-->
+  <section class="cta">
+    <h2>Ready to Plan Your Event?</h2>
+    <p>Send us a message and we will get back to you within 24 hours.</p>
+    <a href="contact_us.html" class="btn-primary">Book our Services</a>
+  </section>
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <h3>Prestige Catering <span>&amp; Events</span></h3>
+        <p>Delivering memorable catering experiences across Pretoria since 2019.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Our Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact_us.html">Get a hold of us</a></li>
+        </ul>
+      </div>
+
+
+
+      <!--Java code will be here -->
+  <script src="js_assets/script.js"></script>
+
+  <script>
+    function filterServices(category) {
+
+      var services = document.querySelectorAll('.service-detail');
+      var buttons = document.querySelectorAll('.filter-btn');
+
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active-filter');
+      }
+
+      event.target.classList.add('active-filter');
+
+      for (var i = 0; i < services.length; i++) {
+        if (category === 'all') {
+          services[i].style.display = 'block';
+        } else if (services[i].getAttribute('data-category') === category) {
+          services[i].style.display = 'block';
+        } else {
+          services[i].style.display = 'none';
+        }
+      }
+
+    }
+  </script>
